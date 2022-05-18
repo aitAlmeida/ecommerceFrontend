@@ -1,24 +1,16 @@
-import Home from "./pages/Home";
-
 import {
-  BrowserRouter as Router,
+  BrowserRouter,
   Routes,
   Route,
   Redirect,
 } from "react-router-dom";
-import Success from "./pages/Success";
-import { useSelector } from "react-redux";
+import Home from "./pages/Home";
 
 const App = () => {
-  const user = useSelector((state) => state.user.currentUser);
   return (
-    <Router>
-      <Routes>
-        <Route exact path="/">
-          <Home />
-        </Route>
-      </Routes>
-    </Router>
+    <div>
+     <Home/> 
+    </div>
   );
 };
 
